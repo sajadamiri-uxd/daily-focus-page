@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Focus Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Daily Focus Dashboard</h1>
+
+    <div class="card">
+        <h2>Today's Goal</h2>
+        <input id="goalInput" type="text" placeholder="Enter your main goal">
+        <button onclick="saveGoal()">Save Goal</button>
+        <p id="goalText"></p>
+    </div>
+
+    <div class="card">
+        <h2>Tasks</h2>
+        <input id="taskInput" type="text" placeholder="New task">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
